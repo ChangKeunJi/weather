@@ -1,0 +1,122 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  background: #eee;
+}
+
+.App {
+  min-height: 100vh;
+}
+
+.Navbar {
+  height: 15vh;
+  .navbar {
+    height: 100%;
+    border-bottom: 1px solid #eee;
+
+    form {
+      display: flex;
+      justify-content: center;
+    }
+    button {
+      color: white;
+      border: 1px solid white;
+    }
+  }
+}
+
+.Main {
+  height: 85vh;
+
+  .container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    h3 {
+      margin-bottom: 4rem;
+      padding-bottom: 1rem;
+      border-bottom: 2px solid #eee;
+    }
+  }
+}
+
+.List {
+  height: 85vh;
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+  h2 {
+    letter-spacing: 10px;
+    text-transform: uppercase;
+  }
+}
+
+.Card {
+  text-decoration: none;
+  .card {
+    background: #eee;
+    padding: 1rem;
+    margin: 1.5rem 0;
+    width: 13rem;
+    .card-img-top {
+      height: 8rem;
+    }
+    .card-body {
+      font-size: 1.3rem;
+    }
+  }
+  transition: ease 0.3s;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.List {
+  color: #000;
+}
+
+.Detail {
+  position: relative;
+  .container {
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 6rem 1rem;
+    margin-top: 3rem;
+
+    .detail {
+      font-size: 1.3rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+
+    .row {
+      height: 100%;
+
+      .detail-left {
+        border-right: 1px solid #000;
+      }
+    }
+  }
+  img {
+    height: 9rem;
+  }
+
+  #back-btn {
+    position: absolute;
+    left: 10px;
+  }
+}
+
+@media (max-width: 844px) {
+  .detail-left {
+    border-right: none !important;
+  }
+}
